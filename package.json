@@ -1,0 +1,22 @@
+{
+  "name": "waellan77_p3_ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Waellan77/Waellan77_P3_Ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Waellan77/Waellan77_P3_Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Waellan77/Waellan77_P3_Ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
