@@ -1,0 +1,29 @@
+.location {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $color-location;
+    box-shadow: inset 0 2px $color-shadow;
+    padding: 0.4rem 0;
+
+    p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .fa-location-dot {
+        margin: 1rem;
+    }
+}
+
+.presentation {
+    background-color: $color-presentation;
+    text-align: center;
+    padding: 2rem 3rem;
+    font-size: 20px;
+
+    h2 {
+        margin: 0;
+        font-weight: bold;    
+    }
+}

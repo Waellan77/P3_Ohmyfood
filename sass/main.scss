@@ -1,70 +1,11 @@
 @import "./utils/variables";
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: $font-rob;
-}
-
-.logo {
-    font-family: $font-shrik;
-    font-size: 50px;
-    font-weight: normal;
-}
-
-h1 {
-    text-align: center;
-}
-
-.location {
-    display: flex;
-    justify-content: $center-elements;
-    width: 100%;
-    background-color: $color-location;
-    padding: 1rem 0 1rem 0;
-
-    & p {
-        font-size: 18px;
-        font-weight: $font-bold;
-    }
-}
-
-.fa-location-dot {
-    margin: 1rem;
-}
-
-.presentation {
-    background-color: $color-presentation;
-    text-align: $center-elements;
-    padding: 2rem 3rem;
-    font-size: 20px;
-
-    & h2 {
-        margin: 0;
-        font-weight: $font-bold;    
-    }
-
-    & .button {
-        border-radius: 50px;
-        background: linear-gradient($color-secondary, $color-primary);
-        color: $color-white;
-        padding: 1rem 0;
-        width: 75%;
-        margin: auto;
-
-    }
-}
-
-
-
-img {
-    width: 100%;
-    height: 20rem;
-    object-fit: cover;
-}
-
-.logofoot {
-    font-family: $font-shrik;
-}
+@import "./base/base";
+@import "./base/typography";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./components/button";
+@import "./pages/home";
+@import "./pages/menu_1";
+@import "./pages/menu_2";
+@import "./pages/menu_3";
+@import "./pages/menu_4";
