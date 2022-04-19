@@ -27,3 +27,40 @@
         font-weight: bold;    
     }
 }
+.operation {
+    h2 {
+        padding: 1rem;
+    }    
+}
+
+ol{
+    list-style: none;
+    counter-reset: my-counter;
+    padding: 0 1rem;
+    li {
+        background-color: $color-presentation;
+        border-radius: 30px;
+        font-weight: bold;
+        padding: 2rem;
+        margin: 1rem;
+        box-shadow: 0 2px $color-shadow;
+        counter-increment: my-counter;
+        position: relative;
+        &::before{
+            content: counter(my-counter);
+            background-color: #9356DC;
+            color: #FFF;
+            padding-top: 0.5rem;
+            width: 2rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            text-align: center;
+            display: inline-block;
+            margin: 0 2rem 0 -3rem;
+        }
+        i {
+            color: $color-awasome;
+            margin-right: 1rem;
+        }
+    }
+}
