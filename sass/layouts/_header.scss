@@ -2,3 +2,16 @@
     text-align: center;
     margin: 0.7rem 0;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+
+    i {
+        color: black;
+        font-size: 25px;
+        margin: 1.4rem 0rem 0rem -4rem;
+    }
+}
+
+
