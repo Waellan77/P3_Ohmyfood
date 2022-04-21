@@ -3,7 +3,8 @@
         background-color: $color-presentation;
         position: relative;
         top: -4rem;
-        border-radius: 50px;
+        border-radius: 50px 50px 0 0;
+        height: 100%;
     }
 
     h2 {
@@ -27,3 +28,43 @@
     padding: 1.5rem;
 }
 
+.composition {
+    background-color: $color-white;
+    border-radius: 20px;
+    margin: 1rem 1rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 6px $color-shadow;
+
+    h3 {
+        margin: 0;
+    }
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+}
+
+.order {
+    text-align: center;
+    background-color: $color-presentation;
+    padding: 3rem 0 5rem;
+
+    .button {
+        padding: 1rem 3rem;
+    }
+}
+
+#menu {
+    footer {
+        margin-top: -4rem;
+    }
+}
