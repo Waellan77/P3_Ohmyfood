@@ -1,13 +1,13 @@
-.logo {
-    text-align: center;
-    margin: 0.7rem 0;
-}
-
-header {
+.header {
     display: flex;
     justify-content: center;
 
-    i {
+    &__logo {
+        text-align: center;
+        margin: 0.7rem 0;
+    }
+
+    .fa-arrow-left {
         color: black;
         font-size: 25px;
         margin: 1.4rem 0rem 0rem -4rem;
