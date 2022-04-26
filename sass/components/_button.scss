@@ -1,8 +1,16 @@
 .button {
-    border-radius: 50px;
     background: linear-gradient($color-secondary, $color-primary);
     color: $color-white;
-    text-decoration: none;
     padding: 1rem 1rem;
-    width: 75%;
+    border-radius: 50px;
+    box-shadow: 6px 6px 6px $color-shadow;
+    transition: background-color 400ms;
+
+    &:hover {
+        background: lighten($color-primary, 8);
+        background: lighten($color-secondary, 8);
+        box-shadow: 6px 6px 6px $color-footer;
+        
+    }
 }
+
