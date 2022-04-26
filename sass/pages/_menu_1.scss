@@ -24,6 +24,7 @@
 
 .menu__list__title {
     display: flex;
+    justify-content: space-between;
     padding: 1.5rem;
 }
 
@@ -33,6 +34,10 @@
     margin: 1rem 1rem;
     padding: 1rem;
     box-shadow: 6px 6px 6px $color-shadow;
+
+    &:hover {
+        box-shadow: 6px 6px 6px $color-footer;
+    }
 
     h3 {
         margin: 0;
