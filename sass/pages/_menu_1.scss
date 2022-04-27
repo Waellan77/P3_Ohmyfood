@@ -57,6 +57,10 @@
     }
 }
 
+.menu__list__composition__price__check{
+    display: none;
+}
+
 .menu__list__order {
     text-align: center;
     background-color: $color-presentation;
@@ -66,3 +70,10 @@
         padding: 1rem 3rem;
     }
 }
+
+.menu__list__composition {
+    animation: bottom_up 2000ms 0ms ease-in-out;
+}
+
+
+

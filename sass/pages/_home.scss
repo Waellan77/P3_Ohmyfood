@@ -16,6 +16,18 @@
     }
 }
 
+.home__location__search {
+    margin: 1rem 0;
+    border: none;
+    outline: none;
+    background: $color-location;
+
+    &::placeholder {
+        color: black;
+        font-weight: bold;
+    }
+}
+
 .home__presentation {
     background-color: $color-presentation;
     text-align: center;
@@ -128,3 +140,9 @@
     }
 }
 
+
+.restaurant__list__article__link__description {
+    i:hover {
+        background: linear-gradient($color-secondary, $color-primary);
+    }
+}
