@@ -162,15 +162,44 @@
 
 .loader__circles {
     display: flex;
+    position: relative;
     justify-content: center;
-    vertical-align: middle;
-    height: 50px;
+    align-items: center;
+    height: 50%;
 
     .loader__spin {
         border-radius: 50px;
+        height: 100px;
+        width: 100px;
         border: 3px solid transparent;
-        border-top-color: $color-white;
-        animation: spin 2s linear infinite;
+        border-top-color: $color-primary;
+        animation: spin 1s linear infinite;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            bottom: 5px;
+            right: 5px;
+            border-radius: 50px;
+            border: 3px solid transparent;
+            border-top-color: $color-secondary;
+            animation: spin 5s linear infinite;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            bottom: 12px;
+            right: 12px;
+            border-radius: 50px;
+            border: 3px solid transparent;
+            border-top-color: $color-tertiary;
+            animation: spin 10s linear infinite;
+        }        
     }
 }
 
@@ -178,8 +207,8 @@
 .loader__title {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    height: 20%;
+    align-items: center;
+    height: 50%;
     .loader__letter {
         display: block;
         font-family: $font-title;
