@@ -29,14 +29,22 @@
 }
 
 .menu__list__composition {
+    position: relative;
     background-color: $color-white;
     border-radius: 20px;
     margin: 1rem 1rem;
     padding: 1rem;
     box-shadow: 6px 6px 6px $color-shadow;
+    transition: padding-right 2s ease-in-out;
 
     &:hover {
+        padding-right: calc(1rem + 25%);
         box-shadow: 6px 6px 6px $color-footer;
+        
+        .menu__list__composition__price__check {
+            visibility: visible;
+            right: 0;
+        }
     }
 
     h3 {
@@ -57,8 +65,21 @@
     }
 }
 
-.menu__list__composition__price__check{
-    display: none;
+.menu__list__composition__price__check {
+    visibility: hidden;
+    background: #99E2D0;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: -8rem;
+    height: 100%;
+    width: 25%;
+    border-radius: 0 20px 20px 0;
+
+    .fa-circle-check {
+        font-size: 25px;
+        padding: 2rem 2.3rem; 
+    }
 }
 
 .menu__list__order {
@@ -68,6 +89,20 @@
 
     .button {
         padding: 1rem 3rem;
+    }
+}
+
+@keyframes bottom_up {
+    0% {
+        transform: translateY (3rem);
+        margin: 6rem 1rem;
+        opacity:0
+    }
+
+    100% {
+        transform: translateY (0);
+        margin: 1rem 1rem;
+        opacity: 1;
     }
 }
 

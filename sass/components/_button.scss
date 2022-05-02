@@ -7,8 +7,7 @@
     transition: background-color 400ms;
 
     &:hover {
-        background: lighten($color-primary, 8);
-        background: lighten($color-secondary, 8);
+        background: linear-gradient(lighten($color-secondary, 8), lighten($color-primary, 8));
         box-shadow: 6px 6px 6px $color-footer;
         
     }

@@ -16,7 +16,7 @@
     }
 }
 
-.home__location__search {
+.home__search {
     margin: 1rem 0;
     border: none;
     outline: none;
@@ -53,11 +53,11 @@
     }    
 }
 
-.home__operation__ol{
+.home__ol{
     list-style: none;
     counter-reset: my-counter;
     padding: 0 1rem;
-    &__li {
+    .home__li {
         background-color: $color-presentation;
         border-radius: 30px;
         font-weight: bold;
@@ -86,7 +86,7 @@
     }
 }
 
-.home__operation__ol__li:hover  {
+.home__li:hover  {
     background: $color-hover-fonction;
         
         i {
@@ -105,14 +105,14 @@
 }
 
 
-.restaurant__list__article {
+.restaurant__article {
     position: relative;
     margin: 1rem;
     background-color: $color-white;
     border-radius: 20px;
     box-shadow: 6px 6px 6px $color-shadow;
 
-    &__link {
+    .restaurant__link {
         color: black;
     }
     
@@ -121,7 +121,7 @@
     }
 }
 
-.restaurant__list__article__link__description {
+.restaurant__description {
     padding-bottom: 0.1rem;
 
     h3 {
@@ -141,8 +141,75 @@
 }
 
 
-.restaurant__list__article__link__description {
+.restaurant__description {
     i:hover {
         background: linear-gradient($color-secondary, $color-primary);
+    }
+}
+
+
+
+
+/* loader */
+
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $color-footer;
+}
+
+.loader__circles {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    height: 50px;
+
+    .loader__spin {
+        border-radius: 50px;
+        border: 3px solid transparent;
+        border-top-color: $color-white;
+        animation: spin 2s linear infinite;
+    }
+}
+
+
+.loader__title {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    height: 50%;
+    .loader__letter {
+        display: contents;
+        font-family: $font-title;
+        font-size: 50px;
+        color: $color-primary;
+        text-shadow: 2px 2px 2px $color-secondary;
+        animation: grow 1s linear infinite;
+    }
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(0);
+        opacity: 0;
     }
 }
