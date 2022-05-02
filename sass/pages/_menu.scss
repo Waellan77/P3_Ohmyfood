@@ -11,7 +11,7 @@
         margin: 0;
     }
 
-    &--underline {
+    .menu__list--underline {
         border-bottom: 3px solid $color-tertiary;
         padding-bottom: 0.5rem;
     }
@@ -22,13 +22,13 @@
     font-size: 30px;
 }
 
-.menu__list__title {
+.menu__title {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
 }
 
-.menu__list__composition {
+.menu__composition {
     position: relative;
     background-color: $color-white;
     border-radius: 20px;
@@ -41,7 +41,7 @@
         padding-right: calc(1rem + 25%);
         box-shadow: 6px 6px 6px $color-footer;
         
-        .menu__list__composition__price__check {
+        .menu__check {
             visibility: visible;
             right: 0;
         }
@@ -52,7 +52,7 @@
     }
 }
 
-.menu__list__composition__price {
+.menu__price {
     display: flex;
     justify-content: space-between;
 
@@ -60,12 +60,12 @@
         margin-bottom: 0;
     }
 
-    &--bold {
+    .menu__price--bold {
         font-weight: bold;
     }
 }
 
-.menu__list__composition__price__check {
+.menu__check {
     visibility: hidden;
     background: #99E2D0;
     color: white;
@@ -82,7 +82,7 @@
     }
 }
 
-.menu__list__order {
+.menu__order {
     text-align: center;
     background-color: $color-presentation;
     padding: 3rem 0 5rem;
@@ -106,7 +106,7 @@
     }
 }
 
-.menu__list__composition {
+.menu__composition {
     animation: bottom_up 2000ms 0ms ease-in-out;
 }
 
