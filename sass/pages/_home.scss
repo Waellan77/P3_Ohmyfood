@@ -117,7 +117,7 @@
     }
     
     &:hover {
-        box-shadow: 6px 6px 6px $color-footer;
+        box-shadow: 6px 6px 6px $color-shadow-darker;
     }
 }
 
@@ -146,13 +146,6 @@
         cursor: pointer;
     }
 }
-
-
-
-
-
-
-
 
 
 /* loader */

@@ -8,7 +8,7 @@
 
     &:hover {
         background: linear-gradient(lighten($color-secondary, 8), lighten($color-primary, 8));
-        box-shadow: 6px 6px 6px $color-footer;
+        box-shadow: 6px 6px 6px $color-shadow-darker;
         
     }
 }

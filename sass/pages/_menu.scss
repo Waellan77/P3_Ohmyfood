@@ -34,7 +34,7 @@
 
     &:hover {
         padding-right: calc(1rem + 25%);
-        box-shadow: 6px 6px 6px $color-footer;
+        box-shadow: 6px 6px 6px $color-shadow-darker;
         
         .menu__check {
             visibility: visible;
@@ -68,8 +68,8 @@
 
 .menu__check {
     visibility: hidden;
-    background: #99E2D0;
-    color: white;
+    background: $color-tertiary;
+    color: $color-white;
     position: absolute;
     top: 0;
     right: -8rem;
