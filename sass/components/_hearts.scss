@@ -1,0 +1,65 @@
+/* heart checked and unchecked */
+
+.custom-checkbox .fa-heart{
+    position: absolute;
+    top: 25px;
+    right: 22px;
+    margin: 1.5rem 0 0 1.5rem;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"],
+    .custom-checkbox .checked {
+    display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checked {
+    display: inline-block;
+    background: -webkit-linear-gradient(top, $color-secondary 0%,$color-primary 100%);;
+    background: linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;  
+    animation: fill 3s cubic-bezier(1, 0.6, 0.65, 0.88) both;   
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
+    display: none;
+}
+
+.custom-checkbox:hover {
+    .fa-heart {
+        background: -webkit-linear-gradient(top, $color-secondary 0%,$color-primary 100%);;
+        background: linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        animation: fill 2s cubic-bezier(1, 0.6, 0.65, 0.88) both;
+    }
+}
+
+.custom-checkbox:hover {
+    .fa-regular {
+        display: none;
+    }
+}
+
+.custom-checkbox:hover {
+    .fa-solid {
+        display: inline-block;
+    }
+}
+
+
+
+@keyframes fill {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
