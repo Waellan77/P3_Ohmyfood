@@ -110,3 +110,22 @@
 .menu__composition {
     animation: bottom_up 2000ms 0ms ease-in-out;
 }
+
+
+/* Media queries pour desktop */
+
+.menu__check {
+    @include screenlg {
+        width: 10%;
+    }
+}
+
+.menu__composition {
+    &:hover {
+        @include screenlg {
+            padding-right: calc(1rem + 10%);
+        }
+    }
+}
+
+/* -------------------------- */

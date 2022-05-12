@@ -147,6 +147,7 @@
     }
 }
 
+/* ---------------- */
 
 /* loader */
 
@@ -285,3 +286,24 @@
         visibility: hidden;
     }
 }
+
+/* ------------------- */
+
+
+/* Media queries pour desktop */
+
+.restaurant__list {
+    @include screenlg {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.home__ol {
+    @include screenlg {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* --------------------- */

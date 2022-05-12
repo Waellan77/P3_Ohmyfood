@@ -15,7 +15,7 @@
         }
     }
 
-    ul {
+    .footer__ul {
         padding-bottom: 2rem;
     }
 }
@@ -32,3 +32,27 @@
 .fa-handshake-angle {
 font-size: 11px;
 }
+
+/* Media queries pour desktop */
+
+.footer {
+    @include screenlg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        @include screenlg {
+            margin: 2rem 3rem;
+        }
+    }
+}
+
+.footer__ul {
+    @include screenlg {
+        display: flex;
+    }
+}
+
+/* ------------------------- */

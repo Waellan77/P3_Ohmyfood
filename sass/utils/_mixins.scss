@@ -1,0 +1,5 @@
+@mixin screenlg {
+    @media (min-width: #{$screen-desktop}) {
+        @content;
+    }
+}
