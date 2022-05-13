@@ -21,6 +21,10 @@
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
+
+    h2 {
+        padding-left: 0;
+    }
 }
 
 .menu__composition {

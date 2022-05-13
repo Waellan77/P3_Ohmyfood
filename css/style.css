@@ -58,6 +58,12 @@ h1 {
   font-weight: normal;
 }
 
+.menu__title h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -140,7 +146,7 @@ h1 {
 /* heart checked and unchecked */
 .custom-checkbox .fa-heart {
   position: absolute;
-  bottom: 25px;
+  top: 25px;
   right: 22px;
   margin: 1.5rem 0 0 1.5rem;
   font-size: 30px;
@@ -314,7 +320,7 @@ h1 {
 }
 
 /* heart */
-.restaurant__description .custom-checkbox .fa-heart {
+.restaurant__article .custom-checkbox .fa-heart {
   position: absolute;
   top: auto;
   bottom: 2rem;
@@ -496,6 +502,9 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
+}
+.menu__title h2 {
+  padding-left: 0;
 }
 
 .menu__composition {
