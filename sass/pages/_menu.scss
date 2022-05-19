@@ -34,7 +34,7 @@
     margin: 1rem 1rem;
     padding: 1rem;
     box-shadow: 6px 6px 6px $color-shadow;
-    transition: padding-right 0s ease-in-out;
+    transition: padding-right 1s ease-in-out;
 
     &:hover {
         padding-right: calc(1rem + 25%);
@@ -42,7 +42,12 @@
         
         .menu__check {
             visibility: visible;
-            right: 0;
+	        animation: right_to_left 1s ease-in-out;
+
+            .fa-circle-check {
+                font-size: 25px;
+                animation: check_rotation 1s ease-in-out;
+            }
         }
     }
 
@@ -76,13 +81,13 @@
     color: $color-white;
     position: absolute;
     top: 0;
-    right: -8rem;
+    right: 0;
     height: 100%;
     width: 25%;
     border-radius: 0 20px 20px 0;
 
     .fa-circle-check {
-        font-size: 25px;
+        font-size: 0px;
         padding: 2rem 2.3rem; 
     }
 }
@@ -96,6 +101,16 @@
         padding: 1rem 3rem;
     }
 }
+
+.menu__composition {
+    animation: bottom_up 2000ms 0ms ease-in-out;
+}
+
+
+
+
+
+/* Animation (keyframes) */
 
 @keyframes bottom_up {
     0% {
@@ -111,25 +126,23 @@
     }
 }
 
-.menu__composition {
-    animation: bottom_up 2000ms 0ms ease-in-out;
-}
-
-
-/* Media queries pour desktop */
-
-.menu__check {
-    @include screenlg {
-        width: 10%;
+@keyframes check_rotation {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
 
-.menu__composition {
-    &:hover {
-        @include screenlg {
-            padding-right: calc(1rem + 10%);
-        }
+@keyframes right_to_left {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 25%;
     }
 }
 
-/* -------------------------- */
+/* ---------------------- */ 
